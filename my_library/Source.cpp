@@ -150,7 +150,7 @@ int add_book(book** array_books, int new_book_amount, int count_books)
 	{
 		temp_array_books[i] = *array_books[i]; //копируем во временный объект
 	}
-	delete[] *array_books;
+	delete[] *array_books; //
 	for (int i = count_books; i < new_book_amount+count_books; i++)
 	{
 		cout << " " << endl;
